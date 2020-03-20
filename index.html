@@ -186,7 +186,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-03-20 18:03:24 / Modified: 18:55:18" itemprop="dateCreated datePublished" datetime="2020-03-20T18:03:24+08:00">2020-03-20</time>
+              <time title="Created: 2020-03-20 18:03:24 / Modified: 18:55:42" itemprop="dateCreated datePublished" datetime="2020-03-20T18:03:24+08:00">2020-03-20</time>
             </span>
 
           
@@ -202,7 +202,7 @@
       
           <h3 id="Question-1-why-we-do-need-to-type-element-type-in-the-2nd-ArrayList-lt-gt"><a href="#Question-1-why-we-do-need-to-type-element-type-in-the-2nd-ArrayList-lt-gt" class="headerlink" title="Question 1: why we do need to type element type in the 2nd ArrayList &lt;&gt;"></a>Question 1: why we do need to type element type in the 2nd ArrayList &lt;&gt;</h3><p>We can use it because in the JAVA SE 7 Update, it stats that “you can substitute the parameterized type of the constructor with an empty set of type parameters (&lt;&gt;)”:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String, List&lt;String&gt;&gt; myMap = new HashMap&lt;&gt;();</span><br></pre></td></tr></table></figure>
-<p>You can check the update features here: <a href="https://docs.oracle.com/javase/7/docs/technotes/guides/language/type-inference-generic-instance-creation.html" target="_blank" rel="noopener">https://docs.oracle.com/javase/7/docs/technotes/guides/language/type-inference-generic-instance-creation.html</a></p>
+<p>You can check the update features here:<br><a href="https://docs.oracle.com/javase/7/docs/technotes/guides/language/type-inference-generic-instance-creation.html" target="_blank" rel="noopener">https://docs.oracle.com/javase/7/docs/technotes/guides/language/type-inference-generic-instance-creation.html</a></p>
 <h3 id="Question-2-why-we-can-use-List-list-new-ArrayList-List-new-ArrayList"><a href="#Question-2-why-we-can-use-List-list-new-ArrayList-List-new-ArrayList" class="headerlink" title="Question 2: why we can use List list = new ArrayList() [List = new ArrayList]"></a>Question 2: why we can use List<E> list = new ArrayList<E>() [List = new ArrayList]</h3><p>List<E> is an interface that implaments ArrayList and many other classes.The most benefical reason that we use</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List&lt;E&gt; list = new ArrayList&lt;E&gt;();</span><br></pre></td></tr></table></figure>
 <p>is that we can easily switch between different implementations of the List<E> interface.</p>
